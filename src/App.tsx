@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Sidebar from "./components/Sidebar/sidebar";
-// import AppRoutes from "./routes/appRoutes";
-import "./index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home"; // Ensure this path is correct
+// import backgroundImage from "./assets/bg1.png"; // Import your image
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
-        <Sidebar />
         <Routes>
-          {/* <Route exact path="/*" element={<AppRoutes />}></Route> */}
+          <Route path="/" element={<Home />} />
+          {/* Uncomment the next line to include additional routes */}
+          {/* <Route path="/*" element={<AppRoutes />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
