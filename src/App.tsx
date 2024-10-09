@@ -1,14 +1,18 @@
 import React from "react";
-// import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Sidebar from "./components/Sidebar/sidebar";
+// import AppRoutes from "./routes/appRoutes";
+import "./index.css";
 
 function App() {
   return (
-    <div className="h-20 bg-red-500">
-      <header className="App-header">
-        <p className="flex justify-center border">
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
+    <div className="App">
+      <BrowserRouter>
+        <Sidebar />
+        <Routes>
+          {/* <Route exact path="/*" element={<AppRoutes />}></Route> */}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
