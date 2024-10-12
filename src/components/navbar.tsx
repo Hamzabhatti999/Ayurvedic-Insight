@@ -1,12 +1,12 @@
 export default function Navbar() {
   return (
-    <nav className="bg-none border-gray-200 ">
+    <nav className="bg-lime-700">
       <div className="p-6">
-        <ul className="font-medium items-center flex flex-col p-4 md:justify-center md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row  md:mt-0 md:border-0">
+        <ul className="font-medium items-center flex flex-col uppercase p-4 md:justify-center md:p-0 mt-4 md:flex-row md:mt-0">
           <li>
             <a
               href="#"
-              className=" py-2 px-3 text-black  rounded md:bg-transparent text-[20px] font-bold"
+              className=" py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold"
               aria-current="page"
             >
               Home
@@ -15,7 +15,7 @@ export default function Navbar() {
           <li>
             <a
               href="#"
-              className=" py-2 px-3 text-black  rounded md:bg-transparent text-[20px] font-bold"
+              className=" py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold"
               aria-current="page"
             >
               About Us
@@ -24,7 +24,7 @@ export default function Navbar() {
           <li>
             <a
               href="#"
-              className=" py-2 px-3 text-black  rounded md:bg-transparent text-[20px] font-bold"
+              className=" py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold"
               aria-current="page"
             >
               Services
@@ -33,7 +33,7 @@ export default function Navbar() {
           <li>
             <a
               href="#"
-              className=" py-2 px-3 text-black  rounded md:bg-transparent text-[20px] font-bold"
+              className=" py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold"
               aria-current="page"
             >
               Contact
@@ -72,9 +72,6 @@ export default function Navbar() {
             />
           </svg>
         </button> */}
-        <div className="flex justify-center items-center uppercase mt-4 text-4xl">
-            AYURVEDAINSIGHT
-        </div>
       </div>
     </nav>
   );

@@ -5,7 +5,7 @@ import Home from "./pages/home"; // Ensure this path is correct
 
 function App() {
   return (
-    <div>
+    <div className="font-poppins">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

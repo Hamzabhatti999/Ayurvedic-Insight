@@ -1,14 +1,17 @@
-import backgroundImage from "../assets/bg1.png"; // Import your image
+import backgroundImage from "../assets/rectangle.png";
 import Navbar from "../components/navbar";
 export default function Home() {
   return (
     <div
-      className="bg-cover min-h-screen"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className="bg-center bg-cover bg-no-repeat min-h-screen"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
     >
-      <div>
+      <div className="container mx-auto">
         <Navbar />
       </div>
+      <div className="container"></div>
     </div>
   );
 }
