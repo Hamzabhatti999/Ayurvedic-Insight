@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home"; // Ensure this path is correct
-// import backgroundImage from "./assets/bg1.png"; // Import your image
+import Home from "./pages/home";
+import AppRoutes from "./routes/appRoutes";
 
 function App() {
   return (
@@ -9,8 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* Uncomment the next line to include additional routes */}
-          {/* <Route path="/*" element={<AppRoutes />} /> */}
+          <Route path="/*" element={<AppRoutes />} />
         </Routes>
       </BrowserRouter>
     </div>
