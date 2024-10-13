@@ -1,13 +1,15 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import backgroundImage from "./assets/rectangle.png";
 import AppRoutes from "./routes/appRoutes";
 
 function App() {
   return (
-    <div className="font-poppins">
-      <BrowserRouter>
-        <AppRoutes />
-      </BrowserRouter>
+    <div
+      className="bg-center bg-cover bg-no-repeat min-h-screen"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
+      <AppRoutes />
     </div>
   );
 }

@@ -1,18 +1,9 @@
-import backgroundImage from "../assets/rectangle.png";
 import homeImage from "../assets/Rectangle 4.png";
 import homeImage1 from "../assets/splash.png";
-import Navbar from "../components/navbar";
 export default function Home() {
   return (
-    <div
-      className="bg-center bg-cover bg-no-repeat min-h-screen"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-      }}
-    >
-      <Navbar />
-
-      <div className="container mx-auto mt-20">
+    <div>
+      <div className=" pt-20">
         <div className="flex flex-col gap-4 md:flex-row justify-between items-center">
           <div className="md:w-2/5 text-balance px-20">
             <h1 className="text-5xl font-extrabold text-black">
