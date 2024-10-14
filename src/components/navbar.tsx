@@ -30,12 +30,43 @@ export default function Navbar() {
           </li>
           <li>
             <Link
+              to="/monika"
+              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold ${
+                isActiveLink("/monika") && "text-white"
+              }`}
+            >
+              About Monika
+            </Link>
+          </li>
+
+          <li>
+            <Link
               to="/services"
               className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold ${
                 isActiveLink("/services") && "text-white"
               }`}
             >
               Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/links"
+              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold ${
+                isActiveLink("/links") && "text-white"
+              }`}
+            >
+              Links
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/testimonials"
+              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold ${
+                isActiveLink("/testimonials") && "text-white"
+              }`}
+            >
+              Testimonials
             </Link>
           </li>
           <li>
