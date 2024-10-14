@@ -1,4 +1,4 @@
-const Monika = () => {
+const Links = () => {
   return (
     <div>
       <h3 className="my-4 text-4xl text-center font-semibold italic">
@@ -37,4 +37,4 @@ const Monika = () => {
     </div>
   );
 };
-export default Monika;
+export default Links;
