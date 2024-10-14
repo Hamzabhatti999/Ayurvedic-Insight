@@ -1,6 +1,6 @@
-import homeImage from "../assets/Rectangle 4.png";
-import homeImage1 from "../assets/splash.png";
-import homeImage2 from "../assets/Ellipse.png";
+import aurvedaImage from "../assets/Rectangle 4.png";
+import aurvedaImage1 from "../assets/splash.png";
+import aurvedaImage3 from "../assets/Ellipse.png";
 export default function Home() {
   return (
     <div>
@@ -18,12 +18,12 @@ export default function Home() {
             </p>
           </div>
           <div className="xl:w-1/2 flex flex-col mt-10 lg:mt-0 lg:gap-8 lg:flex-row">
-            <img src={homeImage} alt="Ayurveda image" className=" h-[400px]" />
-            <img src={homeImage1} alt="Ayurveda image" className="h-96 mt-8" />
+            <img src={aurvedaImage} alt="Ayurveda" className=" h-[400px]" />
+            <img src={aurvedaImage1} alt="Ayurveda" className="h-96 mt-8" />
             <div className="absolute">
               <img
-                src={homeImage2}
-                alt="Ayurveda image"
+                src={aurvedaImage3}
+                alt="Ayurveda"
                 className="relative h-64 top-80 lg:top-20 lg:right-0 lg:left-2/3 lg:bottom-0"
               />
             </div>
