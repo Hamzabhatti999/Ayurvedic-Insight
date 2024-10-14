@@ -53,7 +53,7 @@ export default function Navbar() {
             <Link
               to="/links"
               className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent text-[20px] font-bold ${
-                isActiveLink("/link") && "text-white"
+                isActiveLink("/links") && "text-white"
               }`}
             >
               Links
