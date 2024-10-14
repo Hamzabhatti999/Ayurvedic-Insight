@@ -17,7 +17,7 @@ const Testimonials = () => {
           <br /> Thanks for turning my life around.
           <strong className="text-lime-600"> K.S. Fresno, CA.</strong>
         </p>
-        <p className="my-4">
+        <p className="my-3">
           The changes we've noticed in the yoga students who are practicing
           Ayurveda with you are astounding. I asked one woman today, do you feel
           as good as you look? Her answer was YES! We see that with your
@@ -30,7 +30,7 @@ const Testimonials = () => {
             CA .
           </strong>
         </p>
-        <p className="my-4">
+        <p className="my-3">
           I am a patient of Monika Joshi for almost 4 months. Before the
           ayurvedic treatment I had been taking a pain medication, prescribed by
           my doctor. The medicine was to be taken only for a short period of
@@ -43,7 +43,7 @@ const Testimonials = () => {
           helps cure the illness with no side effects.
           <strong className="text-lime-600"> S.G. Fresno, CA .</strong>
         </p>
-        <p className="my-4">
+        <p className="my-3">
           I’ve only known Monika and the practice of Ayurveda for a few months
           now but the teachings have been life changing. I am learning to let go
           of the past, not dwell on the uncertainty of the future and most
@@ -58,7 +58,7 @@ const Testimonials = () => {
             Rebecca L Pendleton, Fresno CA.
           </strong>
         </p>
-        <p className="my-4">
+        <p className="my-3">
           Following the recommendations of Monika Joshi has been the best health
           decision I have made in years. Incorporating only a few of her dietary
           suggestions has benefited me tremendously. I feel calmer and more

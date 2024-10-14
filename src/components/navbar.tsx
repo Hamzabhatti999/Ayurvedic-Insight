@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import Logo from "../assets/logo.png";
 
 export default function Navbar() {
   const location = useLocation();
@@ -15,9 +14,11 @@ export default function Navbar() {
   return (
     <nav className="bg-lime-700">
       <div className="p-6 flex items-center justify-between">
-        <img src={Logo} alt="Logo" height={60} width={60} />
+        <p className="uppercase text-lime-300 text-2xl font-semibold">
+          Ayurveda Insight
+        </p>
         <button
-          className="text-lime-200 md:hidden focus:outline-none"
+          className="text-lime-300 md:hidden focus:outline-none"
           onClick={toggleMenu}
         >
           <svg
@@ -40,7 +41,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/"
-              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
+              className={`py-2 px-3 text-lime-300 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
                 isActiveLink("/") ? "hidden" : "visible"
               }`}
             >
@@ -50,8 +51,8 @@ export default function Navbar() {
           <li>
             <Link
               to="/about"
-              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
-                isActiveLink("/about") && "text-white"
+              className={`py-2 px-3 text-lime-300 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
+                isActiveLink("/about") && "underline"
               }`}
             >
               About Us
@@ -60,8 +61,8 @@ export default function Navbar() {
           <li>
             <Link
               to="/monika"
-              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
-                isActiveLink("/monika") && "text-white"
+              className={`py-2 px-3 text-lime-300 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
+                isActiveLink("/monika") && "underline"
               }`}
             >
               About Monika
@@ -70,8 +71,8 @@ export default function Navbar() {
           <li>
             <Link
               to="/services"
-              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
-                isActiveLink("/services") && "text-white"
+              className={`py-2 px-3 text-lime-300 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
+                isActiveLink("/services") && "underline"
               }`}
             >
               Services
@@ -80,8 +81,8 @@ export default function Navbar() {
           <li>
             <Link
               to="/links"
-              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
-                isActiveLink("/links") && "text-white"
+              className={`py-2 px-3 text-lime-300 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
+                isActiveLink("/links") && "underline"
               }`}
             >
               Links
@@ -90,8 +91,8 @@ export default function Navbar() {
           <li>
             <Link
               to="/testimonials"
-              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
-                isActiveLink("/testimonials") && "text-white"
+              className={`py-2 px-3 text-lime-300 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
+                isActiveLink("/testimonials") && "underline"
               }`}
             >
               Testimonials
@@ -100,8 +101,8 @@ export default function Navbar() {
           <li>
             <Link
               to="/contact"
-              className={`py-2 px-3 text-lime-200 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
-                isActiveLink("/contact") && "text-white"
+              className={`py-2 px-3 text-lime-300 hover:underline md:bg-transparent lg:text-[20px] text-sm font-bold ${
+                isActiveLink("/contact") && "underline"
               }`}
             >
               Contact
@@ -117,7 +118,7 @@ export default function Navbar() {
         <li>
           <Link
             to="/"
-            className={`py-2 px-3 text-lime-200 hover:underline text-sm font-bold ${
+            className={`py-2 px-3 text-lime-300 hover:underline text-sm font-bold ${
               isActiveLink("/") ? "hidden" : "visible"
             }`}
           >
@@ -127,8 +128,8 @@ export default function Navbar() {
         <li>
           <Link
             to="/about"
-            className={`py-2 px-3 text-lime-200 hover:underline text-sm font-bold ${
-              isActiveLink("/about") && "text-white"
+            className={`py-2 px-3 text-lime-300 hover:underline text-sm font-bold ${
+              isActiveLink("/about") && "underline"
             }`}
           >
             About Us
@@ -137,8 +138,8 @@ export default function Navbar() {
         <li>
           <Link
             to="/monika"
-            className={`py-2 px-3 text-lime-200 hover:underline text-sm font-bold ${
-              isActiveLink("/monika") && "text-white"
+            className={`py-2 px-3 text-lime-300 hover:underline text-sm font-bold ${
+              isActiveLink("/monika") && "underline"
             }`}
           >
             About Monika
@@ -147,8 +148,8 @@ export default function Navbar() {
         <li>
           <Link
             to="/services"
-            className={`py-2 px-3 text-lime-200 hover:underline text-sm font-bold ${
-              isActiveLink("/services") && "text-white"
+            className={`py-2 px-3 text-lime-300 hover:underline text-sm font-bold ${
+              isActiveLink("/services") && "underline"
             }`}
           >
             Services
@@ -157,8 +158,8 @@ export default function Navbar() {
         <li>
           <Link
             to="/links"
-            className={`py-2 px-3 text-lime-200 hover:underline text-sm font-bold ${
-              isActiveLink("/links") && "text-white"
+            className={`py-2 px-3 text-lime-300 hover:underline text-sm font-bold ${
+              isActiveLink("/links") && "underline"
             }`}
           >
             Links
@@ -167,8 +168,8 @@ export default function Navbar() {
         <li>
           <Link
             to="/testimonials"
-            className={`py-2 px-3 text-lime-200 hover:underline text-sm font-bold ${
-              isActiveLink("/testimonials") && "text-white"
+            className={`py-2 px-3 text-lime-300 hover:underline text-sm font-bold ${
+              isActiveLink("/testimonials") && "underline"
             }`}
           >
             Testimonials
@@ -177,8 +178,8 @@ export default function Navbar() {
         <li>
           <Link
             to="/contact"
-            className={`py-2 px-3 text-lime-200 hover:underline text-sm font-bold ${
-              isActiveLink("/contact") && "text-white"
+            className={`py-2 px-3 text-lime-300 hover:underline text-sm font-bold ${
+              isActiveLink("/contact") && "underline"
             }`}
           >
             Contact
